@@ -1,163 +1,131 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tariq's Personal site</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Tariqur Rahman · Software developer</title>
+    <meta name="description" content="Tariqur Rahman plans, develops and delivers software. Play the games I've built in the browser.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header>
-      <h1>Tariqur Rahman</h1>
-      <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#techstack">Techstack</a>
-        <a href="#projects">Projects</a>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="logo" href="#top" aria-label="Tariqur Rahman, back to top">TR</a>
+      <nav aria-label="Main">
+        <a href="#games">Games</a>
+        <a href="#stack">Tech stack</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
-    <main>
-      <section id="about">
-        <h2>Hi, My name is Tariq</h2>
-        <h2>I plan, develop and deliver software! </h2>
-      </section>
 
-      <section id="tech-stack">
-        <div>
-          <h2>My Tech Stack</h2>
-          <p>Technologies I've worked with</p>
-          <div class="tech-stack-container">
-            <div class="tech">
-              <img src="images/html-5-96.png" alt="HTML5 Icon">
-              <span class="tech-label">HTML 5</span>
-            </div>
-            <div class="tech">
-              <img src="images/css3-96.png" alt="CSS3 Icon">
-              <span class="tech-label">CSS 3</span>
-            </div>
-            <div class="tech">
-              <img src="images/vue-js-96.png" alt="VueJS Icon">
-              <span class="tech-label">Vue JS</span>
-            </div>
-            <div class="tech">
-              <img src="images/javascript-96.png" alt="JavaScript Icon">
-              <span class="tech-label">JavaScript</span>
-            </div>
-            <div class="tech">
-              <img src="images/php-96.png" alt="PHP Icon">
-              <span class="tech-label">PHP</span>
-            </div>
-            <div class="tech">
-              <img src="images/mysql-logo-96.png" alt="Mysql Icon">
-              <span class="tech-label">Mysql</span>
-            </div>
-            <div class="tech">
-              <img src="images/golang-96.png" alt="Golang Icon">
-              <span class="tech-label">Golang</span>
-            </div>
-            <div class="tech">
-              <img src="images/gitlab-96.png" alt="Gitlab Icon">
-              <span class="tech-label">Gitlab</span>
-            </div>
-            <div class="tech">
-              <img src="images/github-96.png" alt="Github Icon">
-              <span class="tech-label">Github</span>
-            </div>
-            <div class="tech">
-              <img src="images/kubernetes-96.png" alt="Kubernetes Icon">
-              <span class="tech-label">Kubernetes</span>
-            </div>
-            <div class="tech">
-              <img src="images/git-96.png" alt="Git Icon">
-              <span class="tech-label">Git VCS</span>
-            </div>
-            <div class="tech">
-              <img src="images/amazon-web-services-96.png" alt="AWS Icon">
-              <span class="tech-label">AWS</span>
-            </div>
-            <div class="tech">
-              <img src="images/unity-96.png" alt="Unity Icon">
-              <span class="tech-label">Unity</span>
-            </div>
-            <div class="tech">
-              <img src="images/java-96.png" alt="Java Icon">
-              <span class="tech-label">Java</span>
-            </div>
-          </div>
+    <main id="main">
+      <section class="hero" id="top">
+        <p class="hero-player">Player 1</p>
+        <h1>Tariqur<br>Rahman</h1>
+        <p class="hero-lead">I plan, develop and deliver software. These days that's mostly Go, PHP and Vue on AWS and Kubernetes. In my spare time I rebuild the games I grew up with.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#games">Play my games<span class="cursor" aria-hidden="true"></span></a>
+          <a class="btn btn-ghost" href="#contact">Get in touch</a>
         </div>
       </section>
 
-      <section>
-      <div class="card-container">
-        <div class="card">
-          <img src="images/tic-tac-toe.jpg" alt="Project Image">
-          <div class="tags">
-            <span>Javascript</span>
-            <span>HTML</span>
-            <span>CSS</span>
-          </div>
-          <div class="info">
-            <h3>
-              <a href="tic-tac-toe/tic-tac-toe.html">Tic Tac Toe</a>
-            </h3>
-            <p>Also known as noughts and crosses, is a simple main where the objective is to get a line of 3 x's or o's.</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="images/snake.png" alt="Project Image">
-          <div class="tags">
-            <span>Javascript</span>
-            <span>HTML</span>
-            <span>CSS</span>
-          </div>
-          <div class="info">
-            <h3>
-              <a href="snake-game/snake.html"> Snake Game</a>
-            </h3>
-            <p>Remake of the classic nokia snake main</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="images/space-invaders.jpg" alt="Project Image">
-          <div class="tags">
-            <span>PhaserJS</span>
-            <span>Javascript</span>
-            <span>HTML</span>
-            <span>CSS</span>
-          </div>
-          <div class="info">
-            <h3>
-              <a href="space-invaders/space-invaders.html"> Space Invaders</a>
-            </h3>
-            <p>Remake of the Space invaders main</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="images/dino-game.jpg" alt="Project Image">
-          <div class="tags">
-            <span>PhaserJS</span>
-            <span>Javascript</span>
-            <span>HTML</span>
-            <span>CSS</span>
-          </div>
-          <div class="info">
-            <h3>
-              <a href="dino-run/dino-run.html">Chrome Dino Game</a>
-            </h3>
-            <p>Remake of the Chrome Dino main</p>
-          </div>
-        </div>
-      </div>
+      <section class="games" id="games" aria-labelledby="games-title">
+        <h2 id="games-title">Select a game</h2>
+        <p class="section-intro">Each one runs in your browser. Pick one and play.</p>
+
+        <ul class="game-grid">
+          <li class="game">
+            <a class="screen" href="dino-run/dino-run.html" tabindex="-1" aria-hidden="true">
+              <img src="images/dino-game.jpg" alt="" loading="lazy">
+            </a>
+            <div class="game-body">
+              <h3><a href="dino-run/dino-run.html">Dino Run</a></h3>
+              <p>Chrome's offline dinosaur, rebuilt. Jump the cacti, duck the birds and chase a high score.</p>
+              <ul class="tags" aria-label="Built with">
+                <li>Phaser</li><li>JavaScript</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="game">
+            <a class="screen" href="space-invaders/space-invaders.html" tabindex="-1" aria-hidden="true">
+              <img src="images/space-invaders.jpg" alt="" loading="lazy">
+            </a>
+            <div class="game-body">
+              <h3><a href="space-invaders/space-invaders.html">Space Invaders</a></h3>
+              <p>Hold off waves of aliens before they reach the ground.</p>
+              <ul class="tags" aria-label="Built with">
+                <li>Phaser</li><li>JavaScript</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="game">
+            <a class="screen" href="snake-game/snake.html" tabindex="-1" aria-hidden="true">
+              <img src="images/snake.png" alt="" loading="lazy">
+            </a>
+            <div class="game-body">
+              <h3><a href="snake-game/snake.html">Snake</a></h3>
+              <p>The Nokia classic. Eat, grow longer and don't run into your own tail.</p>
+              <ul class="tags" aria-label="Built with">
+                <li>JavaScript</li><li>HTML</li><li>CSS</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="game">
+            <a class="screen" href="tic-tac-toe/tic-tac-toe.html" tabindex="-1" aria-hidden="true">
+              <img src="images/tic-tac-toe.jpg" alt="" loading="lazy">
+            </a>
+            <div class="game-body">
+              <h3><a href="tic-tac-toe/tic-tac-toe.html">Tic Tac Toe</a></h3>
+              <p>Noughts and crosses for two players. First to get three in a row wins.</p>
+              <ul class="tags" aria-label="Built with">
+                <li>JavaScript</li><li>HTML</li><li>CSS</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
       </section>
 
-      <section id="contact">
-        <h2>Get in Touch</h2>
+      <section class="stack" id="stack" aria-labelledby="stack-title">
+        <h2 id="stack-title">Tech stack</h2>
+        <p class="section-intro">Languages, frameworks and tools I've worked with.</p>
+        <ul class="stack-grid">
+          <li><img src="images/golang-96.png" alt="" width="48" height="48">Go</li>
+          <li><img src="images/php-96.png" alt="" width="48" height="48">PHP</li>
+          <li><img src="images/javascript-96.png" alt="" width="48" height="48">JavaScript</li>
+          <li><img src="images/java-96.png" alt="" width="48" height="48">Java</li>
+          <li><img src="images/vue-js-96.png" alt="" width="48" height="48">Vue.js</li>
+          <li><img src="images/html-5-96.png" alt="" width="48" height="48">HTML5</li>
+          <li><img src="images/css3-96.png" alt="" width="48" height="48">CSS3</li>
+          <li><img src="images/mysql-logo-96.png" alt="" width="48" height="48">MySQL</li>
+          <li><img src="images/amazon-web-services-96.png" alt="" width="48" height="48">AWS</li>
+          <li><img src="images/kubernetes-96.png" alt="" width="48" height="48">Kubernetes</li>
+          <li><img src="images/git-96.png" alt="" width="48" height="48">Git</li>
+          <li><img src="images/github-96.png" alt="" width="48" height="48">GitHub</li>
+          <li><img src="images/gitlab-96.png" alt="" width="48" height="48">GitLab</li>
+          <li><img src="images/unity-96.png" alt="" width="48" height="48">Unity</li>
+        </ul>
+      </section>
+
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">Get in touch</h2>
+        <p class="section-intro">Want to talk about a project or a role? Find me on GitHub.</p>
+        <a class="btn btn-primary" href="https://github.com/Tariq-rahman">See my GitHub</a>
       </section>
     </main>
-    <div class="divider"></div>
-    <footer>
-      <p>Copyright &copy; 2023 Tariqur Rahman</p>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year">2026</span> Tariqur Rahman</p>
     </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
